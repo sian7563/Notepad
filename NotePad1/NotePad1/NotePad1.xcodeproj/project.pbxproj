@@ -16,6 +16,7 @@
 		F15CE0CC266B4AE6007A4372 /* MemoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15CE0CB266B4AE6007A4372 /* MemoListTableViewController.swift */; };
 		F15CE0CF266B56D2007A4372 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15CE0CE266B56D2007A4372 /* ComposeViewController.swift */; };
 		F15CE0D2266B9843007A4372 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15CE0D1266B9843007A4372 /* UIViewController+Alert.swift */; };
+		F1871665266F8ABF004395BC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1871664266F8ABF004395BC /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F15CE0CB266B4AE6007A4372 /* MemoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListTableViewController.swift; sourceTree = "<group>"; };
 		F15CE0CE266B56D2007A4372 /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		F15CE0D1266B9843007A4372 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		F1871664266F8ABF004395BC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				F15CE0CB266B4AE6007A4372 /* MemoListTableViewController.swift */,
 				F15CE0CE266B56D2007A4372 /* ComposeViewController.swift */,
 				F15CE0D1266B9843007A4372 /* UIViewController+Alert.swift */,
+				F1871664266F8ABF004395BC /* DetailViewController.swift */,
 			);
 			path = NotePad1;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 				F15CE0CF266B56D2007A4372 /* ComposeViewController.swift in Sources */,
 				F15CE0C9266B47A8007A4372 /* Model.swift in Sources */,
 				F15CE0D2266B9843007A4372 /* UIViewController+Alert.swift in Sources */,
+				F1871665266F8ABF004395BC /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

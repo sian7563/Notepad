@@ -18,11 +18,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="Zjf-N2-NAK" detailTextLabel="qg1-YV-amN" style="IBUITableViewCellStyleSubtitle" id="5fH-TC-l4a">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" textLabel="Zjf-N2-NAK" detailTextLabel="qg1-YV-amN" style="IBUITableViewCellStyleSubtitle" id="5fH-TC-l4a">
                                 <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5fH-TC-l4a" id="WdO-Rv-bbL">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="383" height="55.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zjf-N2-NAK">
@@ -41,6 +41,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="ejP-5c-1oh" kind="show" id="qTH-JR-Bhd"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -105,6 +108,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gNk-US-16d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1847.826086956522" y="-634.82142857142856"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="sX9-1m-wGz">
+            <objects>
+                <viewController id="ejP-5c-1oh" customClass="DetailViewController" customModule="NotePad1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rku-la-H6W">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iIh-qF-a26">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem title="Item" id="p5a-Uj-iLk"/>
+                                </items>
+                            </toolbar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0EH-0M-Kzh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ws0-Os-BJw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0EH-0M-Kzh" firstAttribute="leading" secondItem="ws0-Os-BJw" secondAttribute="leading" id="AdO-N6-aps"/>
+                            <constraint firstItem="iIh-qF-a26" firstAttribute="trailing" secondItem="ws0-Os-BJw" secondAttribute="trailing" id="BJd-E3-aVy"/>
+                            <constraint firstItem="0EH-0M-Kzh" firstAttribute="top" secondItem="Rku-la-H6W" secondAttribute="top" id="Bxl-UZ-hT0"/>
+                            <constraint firstItem="iIh-qF-a26" firstAttribute="bottom" secondItem="ws0-Os-BJw" secondAttribute="bottom" id="H17-iK-puZ"/>
+                            <constraint firstItem="iIh-qF-a26" firstAttribute="leading" secondItem="ws0-Os-BJw" secondAttribute="leading" id="dgX-ve-JG7"/>
+                            <constraint firstItem="iIh-qF-a26" firstAttribute="top" secondItem="0EH-0M-Kzh" secondAttribute="bottom" id="nYT-98-TUH"/>
+                            <constraint firstItem="0EH-0M-Kzh" firstAttribute="trailing" secondItem="ws0-Os-BJw" secondAttribute="trailing" id="pYe-Sq-3lU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="kqe-Hw-hqD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="th5-AP-oIW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="992.75362318840587" y="155.35714285714286"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="00D-xU-gXZ">
