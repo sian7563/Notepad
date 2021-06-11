@@ -17,6 +17,7 @@
 		F15CE0CF266B56D2007A4372 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15CE0CE266B56D2007A4372 /* ComposeViewController.swift */; };
 		F15CE0D2266B9843007A4372 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15CE0D1266B9843007A4372 /* UIViewController+Alert.swift */; };
 		F1871665266F8ABF004395BC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1871664266F8ABF004395BC /* DetailViewController.swift */; };
+		F187166D26731E03004395BC /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187166C26731E03004395BC /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		F15CE0CE266B56D2007A4372 /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		F15CE0D1266B9843007A4372 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		F1871664266F8ABF004395BC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F187166C26731E03004395BC /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		F15CE0AC26690BEE007A4372 /* NotePad1 */ = {
 			isa = PBXGroup;
 			children = (
+				F187166726731DB5004395BC /* Data */,
 				F15CE0C7266B4779007A4372 /* Model */,
 				F15CE0AD26690BEE007A4372 /* AppDelegate.swift */,
 				F15CE0B326690BEE007A4372 /* Main.storyboard */,
@@ -85,6 +88,14 @@
 				F15CE0C8266B47A8007A4372 /* Model.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F187166726731DB5004395BC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F187166C26731E03004395BC /* DataManager.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F15CE0B826690BEE007A4372 /* NotePad1.xcdatamodeld in Sources */,
+				F187166D26731E03004395BC /* DataManager.swift in Sources */,
 				F15CE0AE26690BEE007A4372 /* AppDelegate.swift in Sources */,
 				F15CE0CC266B4AE6007A4372 /* MemoListTableViewController.swift in Sources */,
 				F15CE0CF266B56D2007A4372 /* ComposeViewController.swift in Sources */,
