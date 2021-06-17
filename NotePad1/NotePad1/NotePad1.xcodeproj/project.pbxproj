@@ -34,6 +34,7 @@
 		F15CE0D1266B9843007A4372 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		F1871664266F8ABF004395BC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F187166C26731E03004395BC /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		F1871670267B37E3004395BC /* NotePad1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotePad1.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +67,7 @@
 		F15CE0AC26690BEE007A4372 /* NotePad1 */ = {
 			isa = PBXGroup;
 			children = (
+				F1871670267B37E3004395BC /* NotePad1.entitlements */,
 				F187166726731DB5004395BC /* Data */,
 				F15CE0C7266B4779007A4372 /* Model */,
 				F15CE0AD26690BEE007A4372 /* AppDelegate.swift */,
@@ -322,6 +324,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NotePad1/NotePad1.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NotePad1/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -331,6 +334,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sian.NotePad1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -341,6 +346,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NotePad1/NotePad1.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NotePad1/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -350,6 +356,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sian.NotePad1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
